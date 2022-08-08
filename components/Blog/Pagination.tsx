@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import qs from "qs";
-import { TDirection } from "../utils";
+import { TDirection } from "../../utils";
 
 interface IPropType {
   page: number;
@@ -8,7 +8,7 @@ interface IPropType {
   redirectUrl?: string;
 }
 
-const Pagination = ({ page, pageCount, redirectUrl = "/" }: IPropType) => {
+const Pagination = ({ page, pageCount, redirectUrl = "/blog" }: IPropType) => {
   const router = useRouter();
 
   const isNextDisabled = (): Boolean => {

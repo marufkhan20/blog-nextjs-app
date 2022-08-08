@@ -93,3 +93,30 @@ export interface IQueryOptions {
     pageSize: number;
   };
 }
+
+// Header
+export interface IHeader {
+  id: number;
+  attributes: IHeaderAttribute;
+}
+
+// Header Attribute
+export interface IHeaderAttribute {
+  Title: string;
+  Description: string;
+  Image: IImageData;
+  createdAt: string;
+}
+
+// Social
+export interface ISocial {
+  id: number;
+  attributes: ISocialAttribute;
+}
+
+// Social Attribute
+export interface ISocialAttribute {
+  Name: string;
+  Link: string;
+  createdAt: string;
+}

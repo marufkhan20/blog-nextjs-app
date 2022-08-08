@@ -17,3 +17,11 @@ export const fetchArticles = async (queryString: string) =>
 // fetch single article by article slug
 export const fetchArticleBySlug = async (queryString: string) =>
   api.get(`/api/articles?${queryString}`);
+
+// headers
+export const fetchHeaders = async (queryString?: string) =>
+  api.get(`/api/headers?${queryString}`);
+
+// social
+export const fetchSocials = async (queryString?: string) =>
+  api.get(`/api/socials?${queryString}`);

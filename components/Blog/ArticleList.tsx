@@ -1,4 +1,4 @@
-import { IArticle } from "../types";
+import { IArticle } from "../../types";
 import BlogCard from "./BlogCard";
 import BlogCardWithImage from "./BlogCardWithImage";
 

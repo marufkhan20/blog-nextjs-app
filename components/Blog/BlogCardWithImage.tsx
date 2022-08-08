@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IArticle } from "../types";
+import { IArticle } from "../../types";
 
 interface IPropType {
   article: IArticle;

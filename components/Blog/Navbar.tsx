@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between py-6">
-      <Link href="/">
+      <Link href="/blog">
         <div className="flex items-center cursor-pointer">
           <Image src="/logo.png" alt="logo" height={40} width={45} />
           <span className="font-bold ml-2 text-primary">Coders Blog</span>
@@ -13,16 +13,16 @@ const Navbar = () => {
 
       <ul className="flex items-center">
         <li className="mx-3 font-bold text-gray-600">
-          <a href="#">Products</a>
+          <Link href="#">Products</Link>
         </li>
         <li className="mx-3 font-bold text-gray-600">
-          <a href="#">Pricing</a>
+          <Link href="/">Portfolio</Link>
         </li>
         <li className="mx-3 font-bold text-gray-600">
-          <a href="#">Docs</a>
+          <Link href="#">Docs</Link>
         </li>
         <li className="mx-3 font-bold text-gray-600">
-          <a href="#">Company</a>
+          <Link href="#">Company</Link>
         </li>
       </ul>
 

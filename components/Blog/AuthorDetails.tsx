@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { IArticle } from "../types";
-import { formdatDate } from "../utils";
+import { IArticle } from "../../types";
+import { formdatDate } from "../../utils";
 
 interface IPropType {
   article: IArticle;

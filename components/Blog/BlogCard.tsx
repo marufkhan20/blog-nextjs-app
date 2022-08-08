@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IArticle } from "../types";
+import { IArticle } from "../../types";
 import AuthorDetails from "./AuthorDetails";
 
 interface IPropType {
@@ -9,7 +9,7 @@ interface IPropType {
 const BlogCard = ({ article }: IPropType) => {
   return (
     <div>
-      <Link href={`/article/${article.attributes.Slug}`}>
+      <Link href={`/blog/article/${article.attributes.Slug}`}>
         <h1 className="text-xl font-bold hover:decoration-2 hover:underline hover:cursor-pointer text-gray-600 hover:decoration-primary">
           {article.attributes.Title}
         </h1>

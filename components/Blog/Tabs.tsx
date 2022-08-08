@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ICategory } from "../types";
+import { ICategory } from "../../types";
 
 interface IPropType {
   categories: ICategory[];
@@ -21,13 +21,13 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
           className={
             "mr-6 pb-6 border-b-4 rounded-sm font-semibold " +
             `${
-              router.pathname === "/"
+              router.pathname === "/blog"
                 ? "border-primary text-primary"
                 : "border-white text-gray-400"
             }`
           }
         >
-          <Link href="/">Recent</Link>
+          <Link href="/blog">Recent</Link>
         </li>
 
         {categories.map((category) => (
@@ -42,7 +42,7 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
               }`
             }
           >
-            <Link href={`/category/${category.attributes.Slug}`}>
+            <Link href={`/blog/category/${category.attributes.Slug}`}>
               {category.attributes.Title}
             </Link>
           </li>
