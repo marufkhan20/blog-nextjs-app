@@ -90,7 +90,7 @@ export interface IQueryOptions {
   populate: any;
   pagination: {
     page: number;
-    pageSize: number;
+    pageSize?: number;
   };
 }
 

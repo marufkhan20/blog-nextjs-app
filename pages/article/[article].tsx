@@ -4,10 +4,10 @@ import { GetServerSideProps } from "next";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import Head from "next/head";
 import qs from "qs";
-import AuthorDetails from "../../../components/Blog/AuthorDetails";
-import { fetchArticleBySlug } from "../../../http";
-import { IArticle, ICollectionResponse } from "../../../types";
-import { serializeMarkdown } from "../../../utils";
+import AuthorDetails from "../../components/Blog/AuthorDetails";
+import { fetchArticleBySlug } from "../../http";
+import { IArticle, ICollectionResponse } from "../../types";
+import { serializeMarkdown } from "../../utils";
 
 interface IPropType {
   article: IArticle;

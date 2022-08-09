@@ -9,15 +9,15 @@ const Footer = () => {
           <div className="flex items-center justify-center md:justify-start">
             <Image src="/logo.png" height={40} width={45} alt="logo" />
             <span className="ml-3 text-base font-bold text-gray-900">
-              Coders Blog
+              Maruf Blog
             </span>
           </div>
         </Link>
 
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">
-          &#169; 2022 Coders Blog -
+          &#169; 2022 Maruf Blog -
           <a href="/" className="text-gray-600 ml-2" target="_blank">
-            @codersGyan
+            @mdmaruf
           </a>
         </p>
 

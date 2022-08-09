@@ -4,10 +4,10 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between py-6">
-      <Link href="/blog">
+      <Link href="/">
         <div className="flex items-center cursor-pointer">
           <Image src="/logo.png" alt="logo" height={40} width={45} />
-          <span className="font-bold ml-2 text-primary">Coders Blog</span>
+          <span className="font-bold ml-2 text-primary">Maruf Blog</span>
         </div>
       </Link>
 

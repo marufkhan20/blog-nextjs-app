@@ -27,7 +27,7 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
             }`
           }
         >
-          <Link href="/blog">Recent</Link>
+          <Link href="/">Recent</Link>
         </li>
 
         {categories.map((category) => (
@@ -42,7 +42,7 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
               }`
             }
           >
-            <Link href={`/blog/category/${category.attributes.Slug}`}>
+            <Link href={`/category/${category.attributes.Slug}`}>
               {category.attributes.Title}
             </Link>
           </li>

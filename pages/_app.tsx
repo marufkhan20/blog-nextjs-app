@@ -11,19 +11,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <NextNProgress color="#53BD95" />
-      {router.pathname === "/" ? (
-        <>
+      <div className="container mx-auto font-sans">
+        <Navbar />
+        <main className="pb-32">
           <Component {...pageProps} />
-        </>
-      ) : (
-        <div className="container mx-auto font-sans">
-          <Navbar />
-          <main className="pb-32">
-            <Component {...pageProps} />
-          </main>
-          <Footer />
-        </div>
-      )}
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
