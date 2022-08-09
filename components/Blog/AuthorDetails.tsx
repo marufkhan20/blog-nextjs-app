@@ -11,7 +11,7 @@ const AuthorDetails = ({ article }: IPropType) => {
     <div className="flex items-center my-4">
       <div className="rounded-lg overflow-hidden flex justify-center items-start mr-2">
         <Image
-          src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
+          src={`https://md-maruf-admin.herokuapp.com${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
           height={40}
           width={40}
           alt="author"
